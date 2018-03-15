@@ -42,13 +42,11 @@ function recordPastTime(){
 }
 
 function resetTimer(){
-    if(running == true){
-        clearInterval(interval);
-        document.getElementById('pasttimes').innerHTML = "";
-        time = 0;
-        document.getElementById("timer").innerHTML = time;
-        running = false;
-    }
+    clearInterval(interval);
+    document.getElementById('pasttimes').innerHTML = "";
+    time = 0;
+    document.getElementById("timer").innerHTML = time;
+    running = false;
 }
 
 function setUp(){
